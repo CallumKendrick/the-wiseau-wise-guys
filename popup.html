@@ -1,4 +1,8 @@
 <html>
+<head>
+    <script src="jquery-3.2.0.min.js"></script>
+    <script src="ohHiScript.js"></script>
+</head>
 <body>
 <style>
     .italic {
@@ -30,13 +34,13 @@
 
 <label for="filter-words">Words to filter out:</label>
 <br/>
-<textarea name="filter-words">rice</textarea>
+<textarea id="filter-words" name="filter-words">rice</textarea>
 <br/>
 
 <input type="checkbox"
 name="Voice Lines" value="Voice Lines"> Wiseguy Mode <br></br>
 
-<button type="button" onclick="Success!"> Save</button>
+<button id="save" type="button" onclick="Success!"> Save</button>
 
 <img src="Tommy_has_Arrived.jpg" alt="You're tearing me apart lisa"
      style="float:right;width:160px;height:170px;">
