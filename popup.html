@@ -40,7 +40,15 @@
 <input type="checkbox"
 name="Voice Lines" value="Voice Lines"> Wiseguy Mode <br></br>
 
-<button id="save" type="button" onclick="Success!"> Save</button>
+  <script>
+function play(){
+  var audio = document.getElementByID("/ohhiworl.mp3");
+  audio.play()
+                }
+  </script>
+
+<button id="save" type="button" value="PLAY" onclick="PlaySound('ohhiworl.mp3').play()"> Save</button>
+<audio id="audio" src="/ohhiworl.mp3"></audio>
 
 <img src="Tommy_has_Arrived.jpg" alt="You're tearing me apart lisa"
      style="float:right;width:160px;height:170px;">
