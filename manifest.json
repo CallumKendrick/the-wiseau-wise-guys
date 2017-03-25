@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "The Wiseau Wise Guy",
+  "version": "0.1",
+
+  "icons": {
+      "16": "Wiseau16x.png",
+      "48": "Wiseau48x.png",
+      "128": "Wiseau128.png"
+  },
+
+  "browser_action": {
+      "default_icon": "Wiseau128.png",
+      "default_popup": "popup.html"
+  }
+}
