@@ -4,22 +4,28 @@
     .italic {
         font-style: italic;
     }
-    
+
     body {
         width: 500px;
-      
+
+    }
+
+    textarea {
+        width: 100%;
     }
 
 </style>
 </head>
 <body>
 
-    <h1 class="italic">Oh Hi World<h1>
+    <h1 class="italic">Oh Hi World</h1>
 
-        <h2 class="italic">Settings<h2>
+        <h2 class="italic">Settings</h2>
 
-<input type="checkbox"
- name="Rice Filter" value="RiceFilter"> Rice Filter <br>
+<label for="filter-words">Words to filter out:</label>
+<br/>
+<textarea name="filter-words">rice</textarea>
+<br/>
 
 <input type="checkbox"
 name="Voice Lines" value="Voice Lines"> Wiseguy Mode <br>
