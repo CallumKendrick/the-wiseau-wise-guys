@@ -22,8 +22,8 @@
     "content_scripts": 
     [
         {
-            "matches":["https://*.slack.com"],
-            "js":["thirdParty/jquery3.2.0.min.js", "script.js"],
+            "matches":["https://*.slack.com/*"],
+            "js":["jquery-3.2.0.min.js", "flag.js"],
             "run_at": "document_end"
         }
     ]
