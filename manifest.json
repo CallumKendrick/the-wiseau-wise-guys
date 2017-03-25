@@ -22,7 +22,7 @@
     "content_scripts": 
     [
         {
-            "matches":["http://website*"],
+            "matches":["https://*.slack.com"],
             "js":["thirdParty/jquery3.2.0.min.js", "script.js"],
             "run_at": "document_end"
         }
