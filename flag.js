@@ -1,3 +1,22 @@
+var quotes = [
+    "I am fed up with this world",
+    "You are tearing me apart, lisa",
+    "What drugs, Denny?!",
+    "I cannot tell you, it's confidential. Anyway, how is your sex life?"
+]
+var currentQuote = 0;
+
+var getQuote = function() {
+    if(currentQuote == quotes.length-1) {
+        currentQuote = 0;
+    }
+    else {
+        ++currentQuote;
+    }
+
+    return quotes[currentQuote];
+}
+
 var flag = function(data)
 {
    console.log("changed")
@@ -16,8 +35,8 @@ var flag = function(data)
 
             if(wordIsInMessage)
             {
-                console.log("hai")
-                $(this).html("I am fed up with this world");
+                $(this).text(getQuote);
+                $(this).css("color", "#168e16");
             }
         }
     })
