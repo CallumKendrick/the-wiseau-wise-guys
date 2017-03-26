@@ -1,6 +1,8 @@
-var flag = function()
+var flag = function(data)
 {
-    $("body").text("rice")
+    var blockedWords = data.blockedWords;
+    var text = blockedWords.join(" ");
+    $("body").text(text)
     
 }
 
@@ -10,4 +12,9 @@ var change = function()
     $(this)
     
 }
-$(flag)
+
+var getWords = function()
+{
+    chrome.storage.sync.get("blockedWords", flag);
+}
+$(getWords)
