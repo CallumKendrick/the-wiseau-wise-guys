@@ -18,7 +18,7 @@ function saveConfig() {
 }
 
 function displayConfig() {
-    var wordsToBlock = chrome.storage.sync.get("blockedWords", function(store) {
+    chrome.storage.sync.get("blockedWords", function(store) {
         $("#filter-words").val(store.blockedWords.join("\n"));
     });
 }

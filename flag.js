@@ -2,21 +2,22 @@ var flag = function(data)
 {
    console.log("changed")
     var blockedWords = data.blockedWords;
+    console.log(data);
     $(".message_body").each(function()
     {
         for(var i = 0; i < blockedWords.length; i++)
         {
             console.log($(this));
             var wordToCheckFor = blockedWords[i];
-            var wordIsInMessage = $(this).text().toLowerCase().indexOf(wordToCheckFor) != 0
+            var wordIsInMessage = $(this).text().toLowerCase().indexOf(wordToCheckFor) != -1
             console.log($(this).text().toLowerCase());
-            
+
             console.log(wordIsInMessage);
-            
+
             if(wordIsInMessage)
             {
                 console.log("hai")
-                //$(this).text("I am sick of this world");
+                $(this).html("I am fed up with this world");
             }
         }
     })
@@ -32,6 +33,6 @@ var getWords = function()
 $(function()
 {
   console.log("oh hi mark")
-    //$("#msgs_div").bind("DOMSubtreeModified", getWords);  
-    $("#messages_container").
+    //$("#msgs_div").bind("DOMSubtreeModified", getWords);
+    $("#msgs_div").bind("DOMSubtreeModified", getWords);
 })
