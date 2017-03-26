@@ -1,8 +1,14 @@
 var quotes = [
-    "I am fed up with this world",
-    "You are tearing me apart, lisa",
+    "I am fed up with this world!",
+    "You are tearing me apart, lisa!",
     "What drugs, Denny?!",
-    "I cannot tell you, it's confidential. Anyway, how is your sex life?"
+    "I cannot tell you, it's confidential. Anyway, how is your sex life?",
+    "Don't touch me motherchuffer!",
+    "Oh hi, Doggy",
+    "Oh hi, Mark",
+    "Everybody betray me. I don't have a friend in the world",
+    "AAAAAAGHHRR, Why, Lisa, Why?! WHY?!",
+    "Hey everybody! I have an announcement to make! We're expecting!"
 ]
 var currentQuote = 0;
 
