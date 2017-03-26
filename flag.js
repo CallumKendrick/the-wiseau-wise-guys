@@ -8,7 +8,15 @@ var quotes = [
     "Oh hi, Mark",
     "Everybody betray me. I don't have a friend in the world",
     "AAAAAAGHHRR, Why, Lisa, Why?! WHY?!",
-    "Hey everybody! I have an announcement to make! We're expecting!"
+    "Hey everybody! I have an announcement to make! We're expecting!",
+    "Anything for my princess!",
+    "Oh, Hi Johnny. I didn't know it was you",
+    "[throws water bottle]",
+    "You think girls like to cheat like guys do?",
+    "I'm so happy I have you as my best friend. And I love Lisa so much",
+    "You betrayed me! You're not good. You- you're just a chicken. Chip-chip-chip-chip-cheep-cheep",
+    "Do you want me to order a pizza",
+    "Everything goes wrong all at once. Nobody wants to help me. And I'm dying."
 ]
 var currentQuote = 0;
 
